@@ -5,6 +5,7 @@
 https://git-scm.com/downloads
 - Java 17
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+
 - Postman (para probar el endpoint)
 
 ### Instalación
@@ -60,8 +61,8 @@ digicertPrueba
     │   │       └── digicert
     │   │           └── public_api
     │   │               ├── application
-  	│	  │				        │	  ├── dto  	    --> Objetos de transferencia de datos que se utilizan para transportar datos entre las capas.
-  	│   │				        │   │   └── weather --> Clases para el construir el dto. 
+    │	│		│   ├── dto  	    --> Objetos de transferencia de datos que se utilizan para transportar datos entre las capas.
+    │   │		│   │   └── weather --> Clases para el construir el dto. 
     │   │               │   ├── mapper      --> Facilita la transformacion de datos a dto. 
     │   │               │   └── service     --> Lógica de negocio y servicios de la aplicación. Interfaz.
     │   │               │       └── impl    --> Implementaciones de los servicios. 
@@ -82,5 +83,6 @@ digicertPrueba
             └── com
                 └── digicert
                     └── public_api
+
 					
 ```		
