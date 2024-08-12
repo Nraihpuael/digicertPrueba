@@ -19,7 +19,11 @@ public class WeatherController {
     private WeatherService weatherService;
     
     @GetMapping
-    public ResponseEntity<?> getWeather(@RequestParam("q") String city){      
+    public ResponseEntity<?> getWeather(@RequestParam(value = "q", required = false) String city) {
+        if (city == null || city.trim().isEmpty()) {
+            throw new IllegalArgumentException("City parameter is required");
+        }  
+        
         WeatherDTO weatherDTO = weatherService.getWeather(city);
             if (weatherDTO == null) {
                 return ResponseEntity.notFound().build();

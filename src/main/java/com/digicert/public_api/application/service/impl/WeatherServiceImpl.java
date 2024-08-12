@@ -29,9 +29,6 @@ public class WeatherServiceImpl implements WeatherService{
     
     @Override
     public WeatherDTO getWeather(String city) {
-        if (city == null || city.trim().isEmpty()) {
-            throw new IllegalArgumentException("City parameter cannot be empty");
-        }
         try {
             JsonNode response = webClient.get()
                     .uri(uriBuilder -> uriBuilder
