@@ -22,7 +22,8 @@ mvnw clean package
 mvnw spring-boot:run
 ```
 4. **Uso del endpoint**:
-```	/api/weather
+```	
+	http://localhost:8080/api/weather?q=
 
 	Método: GET
 
