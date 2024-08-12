@@ -1,4 +1,4 @@
-## Guía de desarrollo
+## Guía de Uso
 
 ### Requisitos
 - GIT
